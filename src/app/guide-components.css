@@ -1,0 +1,197 @@
+/* Shared guide page components */
+.guide-page {
+  @apply w-full;
+}
+
+.guide-header {
+  @apply mb-8;
+}
+
+.guide-title {
+  @apply text-3xl md:text-4xl font-bold mb-4 text-slate-900;
+}
+
+.guide-subtitle {
+  @apply text-xl text-slate-600 mb-4;
+}
+
+.guide-meta {
+  @apply flex flex-wrap items-center text-sm text-slate-500 mb-6;
+}
+
+.guide-meta-item {
+  @apply mr-4;
+}
+
+.guide-meta-separator {
+  @apply mr-4;
+}
+
+.guide-hero-image {
+  @apply relative w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden mb-8;
+}
+
+.guide-content-layout {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-8;
+}
+
+.guide-main-content {
+  @apply lg:col-span-2;
+}
+
+.guide-sidebar {
+  @apply lg:col-span-1;
+}
+
+.guide-sidebar-sticky {
+  @apply sticky top-4 space-y-6;
+}
+
+/* Standardized module grid */
+.module-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4 mt-8;
+}
+
+/* Standardized card components */
+.guide-card {
+  @apply bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-all duration-200;
+}
+
+.guide-card-header {
+  @apply p-4 border-b border-slate-100;
+}
+
+.guide-card-content {
+  @apply p-4;
+}
+
+.guide-card-footer {
+  @apply p-4 bg-slate-50 border-t border-slate-100;
+}
+
+.guide-card-title {
+  @apply text-lg font-semibold text-slate-900 mb-2;
+}
+
+.guide-card-description {
+  @apply text-slate-600 text-sm;
+}
+
+/* Standardized author section */
+.author-section {
+  @apply bg-white rounded-lg border border-slate-200 p-4 md:p-6;
+}
+
+.author-header {
+  @apply flex items-center mb-4;
+}
+
+.author-avatar {
+  @apply w-12 h-12 rounded-full bg-slate-200 mr-4;
+}
+
+.author-name {
+  @apply font-bold;
+}
+
+.author-title {
+  @apply text-sm text-slate-500;
+}
+
+.author-bio {
+  @apply text-sm text-slate-600 mb-4;
+}
+
+/* Standardized FAQ section */
+.faq-section {
+  @apply mt-12;
+}
+
+.faq-title {
+  @apply text-2xl font-bold mb-6;
+}
+
+.faq-grid {
+  @apply space-y-4;
+}
+
+.faq-item {
+  @apply border border-slate-200 rounded-lg p-4;
+}
+
+.faq-question {
+  @apply font-bold text-lg mb-2;
+}
+
+.faq-answer {
+  @apply text-slate-700;
+}
+
+/* Standardized CTA section */
+.cta-section {
+  @apply mt-12 bg-slate-50 p-6 rounded-lg;
+}
+
+.cta-title {
+  @apply text-xl font-bold mb-4;
+}
+
+.cta-description {
+  @apply mb-4;
+}
+
+/* Standardized tag system */
+.tag {
+  @apply bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm mr-2 mb-2;
+}
+
+.tag-container {
+  @apply flex flex-wrap gap-2 mb-6;
+}
+
+/* Standardized button styles */
+.btn-standard {
+  @apply rounded-md font-medium transition-all duration-200;
+}
+
+.btn-primary-standard {
+  @apply bg-primary text-primary-foreground hover:bg-primary/90;
+}
+
+.btn-outline-standard {
+  @apply border border-primary text-primary hover:bg-primary hover:text-primary-foreground;
+}
+
+.btn-full {
+  @apply w-full;
+}
+
+.btn-auto {
+  @apply w-full md:w-auto;
+}
+
+/* Standardized lead capture form */
+.lead-form-standard {
+  @apply bg-white rounded-lg border border-slate-200 p-4 md:p-6 shadow-sm;
+}
+
+.lead-form-title-standard {
+  @apply text-xl font-semibold text-slate-900 mb-3;
+}
+
+.lead-form-description-standard {
+  @apply text-slate-600 mb-4;
+}
+
+/* Standardized spacing */
+.section-spacing {
+  @apply mb-12;
+}
+
+.subsection-spacing {
+  @apply mb-8;
+}
+
+.element-spacing {
+  @apply mb-4;
+}

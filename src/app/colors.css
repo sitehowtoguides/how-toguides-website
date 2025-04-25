@@ -1,0 +1,334 @@
+/* Enhanced color system for How-ToGuides.com */
+
+:root {
+  /* Primary Colors */
+  --primary-50: 210 100% 95%;  /* Lightest primary - for backgrounds */
+  --primary-100: 210 100% 90%; /* Very light primary - for hover states */
+  --primary-200: 210 100% 80%; /* Light primary - for borders */
+  --primary-300: 210 100% 70%; /* Medium-light primary */
+  --primary-400: 210 100% 60%; /* Medium primary */
+  --primary-500: 210 100% 50%; /* Base primary */
+  --primary-600: 210 100% 40%; /* Medium-dark primary */
+  --primary-700: 210 100% 35%; /* Dark primary - accent color */
+  --primary-800: 210 100% 25%; /* Very dark primary - main brand color */
+  --primary-900: 210 100% 20%; /* Darkest primary */
+  
+  /* Secondary Colors (Orange) */
+  --secondary-50: 25 100% 95%;  /* Lightest secondary */
+  --secondary-100: 25 100% 90%; /* Very light secondary */
+  --secondary-200: 25 100% 80%; /* Light secondary */
+  --secondary-300: 25 100% 70%; /* Medium-light secondary */
+  --secondary-400: 25 100% 60%; /* Medium secondary */
+  --secondary-500: 25 100% 50%; /* Base secondary */
+  --secondary-600: 25 100% 45%; /* Medium-dark secondary */
+  --secondary-700: 25 100% 40%; /* Dark secondary */
+  --secondary-800: 25 100% 35%; /* Very dark secondary */
+  --secondary-900: 25 100% 30%; /* Darkest secondary */
+  
+  /* Neutral Colors (Slate) */
+  --neutral-50: 210 20% 98%;  /* Lightest neutral - backgrounds */
+  --neutral-100: 210 20% 96%; /* Very light neutral - muted backgrounds */
+  --neutral-200: 214 32% 91%; /* Light neutral - borders */
+  --neutral-300: 213 27% 84%; /* Medium-light neutral */
+  --neutral-400: 215 20% 65%; /* Medium neutral */
+  --neutral-500: 215 16% 47%; /* Base neutral */
+  --neutral-600: 215 19% 35%; /* Medium-dark neutral */
+  --neutral-700: 215 25% 27%; /* Dark neutral - text */
+  --neutral-800: 217 33% 17%; /* Very dark neutral */
+  --neutral-900: 222 47% 11%; /* Darkest neutral */
+  
+  /* Success Colors (Green) */
+  --success-50: 142 76% 95%;
+  --success-100: 141 84% 90%;
+  --success-500: 142 71% 45%;
+  --success-600: 142 76% 36%;
+  --success-700: 142 72% 29%;
+  
+  /* Warning Colors (Amber) */
+  --warning-50: 48 100% 95%;
+  --warning-100: 48 96% 89%;
+  --warning-500: 45 93% 47%;
+  --warning-600: 43 96% 43%;
+  --warning-700: 38 92% 38%;
+  
+  /* Error Colors (Red) */
+  --error-50: 0 100% 95%;
+  --error-100: 0 100% 90%;
+  --error-500: 0 100% 50%;
+  --error-600: 0 100% 45%;
+  --error-700: 0 100% 40%;
+  
+  /* Guide-Specific Theme Colors */
+  
+  /* Midjourney Theme (Purple accents) */
+  --midjourney-accent-light: 270 100% 90%;
+  --midjourney-accent: 270 100% 60%;
+  --midjourney-accent-dark: 270 100% 40%;
+  
+  /* Gemini AI Theme (Blue-green accents) */
+  --gemini-accent-light: 180 100% 90%;
+  --gemini-accent: 180 100% 45%;
+  --gemini-accent-dark: 180 100% 30%;
+  
+  /* DALL-E Theme (Teal accents) */
+  --dalle-accent-light: 160 100% 90%;
+  --dalle-accent: 160 100% 40%;
+  --dalle-accent-dark: 160 100% 30%;
+  
+  /* Update main color variables to use our enhanced system */
+  --primary: var(--primary-800);
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: var(--secondary-500);
+  --secondary-foreground: 210 50% 98%;
+  
+  --accent: var(--primary-700);
+  --accent-foreground: 0 0% 100%;
+  
+  --muted: var(--neutral-100);
+  --muted-foreground: var(--neutral-700);
+  
+  --border: var(--neutral-200);
+  --input: var(--neutral-200);
+  --ring: var(--primary-700);
+  
+  --card: 0 0% 100%;
+  --card-foreground: var(--neutral-900);
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: var(--neutral-900);
+  
+  --destructive: var(--error-500);
+  --destructive-foreground: 210 50% 98%;
+}
+
+/* Color utility classes */
+.bg-primary-50 { background-color: hsl(var(--primary-50)); }
+.bg-primary-100 { background-color: hsl(var(--primary-100)); }
+.bg-primary-200 { background-color: hsl(var(--primary-200)); }
+.bg-primary-300 { background-color: hsl(var(--primary-300)); }
+.bg-primary-400 { background-color: hsl(var(--primary-400)); }
+.bg-primary-500 { background-color: hsl(var(--primary-500)); }
+.bg-primary-600 { background-color: hsl(var(--primary-600)); }
+.bg-primary-700 { background-color: hsl(var(--primary-700)); }
+.bg-primary-800 { background-color: hsl(var(--primary-800)); }
+.bg-primary-900 { background-color: hsl(var(--primary-900)); }
+
+.bg-secondary-50 { background-color: hsl(var(--secondary-50)); }
+.bg-secondary-100 { background-color: hsl(var(--secondary-100)); }
+.bg-secondary-200 { background-color: hsl(var(--secondary-200)); }
+.bg-secondary-300 { background-color: hsl(var(--secondary-300)); }
+.bg-secondary-400 { background-color: hsl(var(--secondary-400)); }
+.bg-secondary-500 { background-color: hsl(var(--secondary-500)); }
+.bg-secondary-600 { background-color: hsl(var(--secondary-600)); }
+.bg-secondary-700 { background-color: hsl(var(--secondary-700)); }
+.bg-secondary-800 { background-color: hsl(var(--secondary-800)); }
+.bg-secondary-900 { background-color: hsl(var(--secondary-900)); }
+
+.bg-neutral-50 { background-color: hsl(var(--neutral-50)); }
+.bg-neutral-100 { background-color: hsl(var(--neutral-100)); }
+.bg-neutral-200 { background-color: hsl(var(--neutral-200)); }
+.bg-neutral-300 { background-color: hsl(var(--neutral-300)); }
+.bg-neutral-400 { background-color: hsl(var(--neutral-400)); }
+.bg-neutral-500 { background-color: hsl(var(--neutral-500)); }
+.bg-neutral-600 { background-color: hsl(var(--neutral-600)); }
+.bg-neutral-700 { background-color: hsl(var(--neutral-700)); }
+.bg-neutral-800 { background-color: hsl(var(--neutral-800)); }
+.bg-neutral-900 { background-color: hsl(var(--neutral-900)); }
+
+.bg-success-50 { background-color: hsl(var(--success-50)); }
+.bg-success-100 { background-color: hsl(var(--success-100)); }
+.bg-success-500 { background-color: hsl(var(--success-500)); }
+.bg-success-600 { background-color: hsl(var(--success-600)); }
+.bg-success-700 { background-color: hsl(var(--success-700)); }
+
+.bg-warning-50 { background-color: hsl(var(--warning-50)); }
+.bg-warning-100 { background-color: hsl(var(--warning-100)); }
+.bg-warning-500 { background-color: hsl(var(--warning-500)); }
+.bg-warning-600 { background-color: hsl(var(--warning-600)); }
+.bg-warning-700 { background-color: hsl(var(--warning-700)); }
+
+.bg-error-50 { background-color: hsl(var(--error-50)); }
+.bg-error-100 { background-color: hsl(var(--error-100)); }
+.bg-error-500 { background-color: hsl(var(--error-500)); }
+.bg-error-600 { background-color: hsl(var(--error-600)); }
+.bg-error-700 { background-color: hsl(var(--error-700)); }
+
+/* Guide-specific theme classes */
+.bg-midjourney-accent-light { background-color: hsl(var(--midjourney-accent-light)); }
+.bg-midjourney-accent { background-color: hsl(var(--midjourney-accent)); }
+.bg-midjourney-accent-dark { background-color: hsl(var(--midjourney-accent-dark)); }
+
+.bg-gemini-accent-light { background-color: hsl(var(--gemini-accent-light)); }
+.bg-gemini-accent { background-color: hsl(var(--gemini-accent)); }
+.bg-gemini-accent-dark { background-color: hsl(var(--gemini-accent-dark)); }
+
+.bg-dalle-accent-light { background-color: hsl(var(--dalle-accent-light)); }
+.bg-dalle-accent { background-color: hsl(var(--dalle-accent)); }
+.bg-dalle-accent-dark { background-color: hsl(var(--dalle-accent-dark)); }
+
+/* Text color utility classes */
+.text-primary-50 { color: hsl(var(--primary-50)); }
+.text-primary-100 { color: hsl(var(--primary-100)); }
+.text-primary-200 { color: hsl(var(--primary-200)); }
+.text-primary-300 { color: hsl(var(--primary-300)); }
+.text-primary-400 { color: hsl(var(--primary-400)); }
+.text-primary-500 { color: hsl(var(--primary-500)); }
+.text-primary-600 { color: hsl(var(--primary-600)); }
+.text-primary-700 { color: hsl(var(--primary-700)); }
+.text-primary-800 { color: hsl(var(--primary-800)); }
+.text-primary-900 { color: hsl(var(--primary-900)); }
+
+.text-secondary-50 { color: hsl(var(--secondary-50)); }
+.text-secondary-100 { color: hsl(var(--secondary-100)); }
+.text-secondary-200 { color: hsl(var(--secondary-200)); }
+.text-secondary-300 { color: hsl(var(--secondary-300)); }
+.text-secondary-400 { color: hsl(var(--secondary-400)); }
+.text-secondary-500 { color: hsl(var(--secondary-500)); }
+.text-secondary-600 { color: hsl(var(--secondary-600)); }
+.text-secondary-700 { color: hsl(var(--secondary-700)); }
+.text-secondary-800 { color: hsl(var(--secondary-800)); }
+.text-secondary-900 { color: hsl(var(--secondary-900)); }
+
+.text-neutral-50 { color: hsl(var(--neutral-50)); }
+.text-neutral-100 { color: hsl(var(--neutral-100)); }
+.text-neutral-200 { color: hsl(var(--neutral-200)); }
+.text-neutral-300 { color: hsl(var(--neutral-300)); }
+.text-neutral-400 { color: hsl(var(--neutral-400)); }
+.text-neutral-500 { color: hsl(var(--neutral-500)); }
+.text-neutral-600 { color: hsl(var(--neutral-600)); }
+.text-neutral-700 { color: hsl(var(--neutral-700)); }
+.text-neutral-800 { color: hsl(var(--neutral-800)); }
+.text-neutral-900 { color: hsl(var(--neutral-900)); }
+
+/* Border color utility classes */
+.border-primary-50 { border-color: hsl(var(--primary-50)); }
+.border-primary-100 { border-color: hsl(var(--primary-100)); }
+.border-primary-200 { border-color: hsl(var(--primary-200)); }
+.border-primary-300 { border-color: hsl(var(--primary-300)); }
+.border-primary-400 { border-color: hsl(var(--primary-400)); }
+.border-primary-500 { border-color: hsl(var(--primary-500)); }
+.border-primary-600 { border-color: hsl(var(--primary-600)); }
+.border-primary-700 { border-color: hsl(var(--primary-700)); }
+.border-primary-800 { border-color: hsl(var(--primary-800)); }
+.border-primary-900 { border-color: hsl(var(--primary-900)); }
+
+.border-secondary-50 { border-color: hsl(var(--secondary-50)); }
+.border-secondary-100 { border-color: hsl(var(--secondary-100)); }
+.border-secondary-200 { border-color: hsl(var(--secondary-200)); }
+.border-secondary-300 { border-color: hsl(var(--secondary-300)); }
+.border-secondary-400 { border-color: hsl(var(--secondary-400)); }
+.border-secondary-500 { border-color: hsl(var(--secondary-500)); }
+.border-secondary-600 { border-color: hsl(var(--secondary-600)); }
+.border-secondary-700 { border-color: hsl(var(--secondary-700)); }
+.border-secondary-800 { border-color: hsl(var(--secondary-800)); }
+.border-secondary-900 { border-color: hsl(var(--secondary-900)); }
+
+.border-neutral-50 { border-color: hsl(var(--neutral-50)); }
+.border-neutral-100 { border-color: hsl(var(--neutral-100)); }
+.border-neutral-200 { border-color: hsl(var(--neutral-200)); }
+.border-neutral-300 { border-color: hsl(var(--neutral-300)); }
+.border-neutral-400 { border-color: hsl(var(--neutral-400)); }
+.border-neutral-500 { border-color: hsl(var(--neutral-500)); }
+.border-neutral-600 { border-color: hsl(var(--neutral-600)); }
+.border-neutral-700 { border-color: hsl(var(--neutral-700)); }
+.border-neutral-800 { border-color: hsl(var(--neutral-800)); }
+.border-neutral-900 { border-color: hsl(var(--neutral-900)); }
+
+/* Enhanced component color styles */
+
+/* Button color styles */
+.btn-primary-standard {
+  background-color: hsl(var(--primary-800));
+  color: white;
+}
+
+.btn-primary-standard:hover {
+  background-color: hsl(var(--primary-700));
+}
+
+.btn-secondary-standard {
+  background-color: hsl(var(--secondary-500));
+  color: white;
+}
+
+.btn-secondary-standard:hover {
+  background-color: hsl(var(--secondary-600));
+}
+
+.btn-outline-standard {
+  border-color: hsl(var(--primary-800));
+  color: hsl(var(--primary-800));
+}
+
+.btn-outline-standard:hover {
+  background-color: hsl(var(--primary-800));
+  color: white;
+}
+
+/* Card color styles */
+.guide-card {
+  border-color: hsl(var(--neutral-200));
+}
+
+.guide-card:hover {
+  border-color: hsl(var(--primary-300));
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.guide-card-header {
+  border-bottom-color: hsl(var(--neutral-100));
+}
+
+.guide-card-footer {
+  background-color: hsl(var(--neutral-50));
+  border-top-color: hsl(var(--neutral-100));
+}
+
+/* Tag color styles */
+.tag {
+  background-color: hsl(var(--neutral-100));
+  color: hsl(var(--neutral-700));
+}
+
+/* CTA section color styles */
+.cta-section {
+  background-color: hsl(var(--primary-50));
+}
+
+/* FAQ item color styles */
+.faq-item {
+  border-color: hsl(var(--neutral-200));
+}
+
+.faq-item:hover {
+  border-color: hsl(var(--primary-200));
+}
+
+/* Guide-specific theme styles */
+.midjourney-theme .tag {
+  background-color: hsl(var(--midjourney-accent-light));
+  color: hsl(var(--midjourney-accent-dark));
+}
+
+.midjourney-theme .cta-section {
+  background-color: hsl(var(--midjourney-accent-light));
+}
+
+.gemini-theme .tag {
+  background-color: hsl(var(--gemini-accent-light));
+  color: hsl(var(--gemini-accent-dark));
+}
+
+.gemini-theme .cta-section {
+  background-color: hsl(var(--gemini-accent-light));
+}
+
+.dalle-theme .tag {
+  background-color: hsl(var(--dalle-accent-light));
+  color: hsl(var(--dalle-accent-dark));
+}
+
+.dalle-theme .cta-section {
+  background-color: hsl(var(--dalle-accent-light));
+}
